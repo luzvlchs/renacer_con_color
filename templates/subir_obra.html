@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+
+    <h1> Subir Obra</h1>
+
+    <p>
+        Comparte tus pinturas realizadas.
+    </p>
+
+    <form class="formulario-obra">
+
+        <input
+            type="text"
+            placeholder="Nombre de la obra"
+            required>
+
+        <textarea
+            placeholder="Descripción de la obra"
+            rows="4"></textarea>
+
+        <label class="archivo-label">
+            Seleccionar imagen
+        </label>
+
+        <input
+            type="file"
+            accept="image/*">
+
+        <br><br>
+
+        <button type="submit" class="btn-panel">
+            Guardar Obra
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/galeria" class="btn-panel">
+        Ver Galería
+    </a>
+
+</div>
+
+{% endblock %}

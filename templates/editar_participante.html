@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+
+    <h1>Editar Participante</h1>
+
+    <form method="POST"
+          action="/actualizar_participante/{{ participante._id }}">
+
+        <input
+            type="text"
+            name="nombre"
+            value="{{ participante.nombre }}"
+            required>
+
+        <input
+            type="number"
+            name="edad"
+            value="{{ participante.edad }}"
+            required>
+
+        <input
+            type="text"
+            name="taller"
+            value="{{ participante.taller }}"
+            required>
+
+        <button type="submit" class="btn-panel">
+            Guardar Cambios
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

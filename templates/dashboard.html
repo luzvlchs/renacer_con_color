@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+    <h1>Renacer con Color</h1>
+    <p>Panel Principal</p>
+</div>
+
+<div class="contenedor-panel">
+
+    <div class="card">
+        <h2> Participantes</h2>
+        <p>
+            Gestiona el registro y la información de los participantes.
+        </p>
+        <a href="/participantes" class="btn-panel">
+            Entrar
+        </a>
+    </div>
+
+    <div class="card">
+        <h2> Cursos</h2>
+        <p>
+            Cursos y talleres disponibles.
+        </p>
+        <a href="/cursos" class="btn-panel">
+            Entrar
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Materiales</h2>
+        <p>
+            Controla los materiales utilizados en los talleres.
+        </p>
+        <a href="/materiales" class="btn-panel">
+            Entrar
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

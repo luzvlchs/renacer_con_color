@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+    <h1>Renacer con Color</h1>
+    <p>Taller de pintura para el bienestar emocional</p>
+</div>
+
+<h1>Cursos Disponibles</h1>
+
+<div class="contenedor-panel">
+
+<div class="card">
+    <h2> Informacion de nuestro taller</h2>
+
+    <p>
+        Aprende todo acerca de nuestro taller
+    </p>
+
+    <a href="{{ url_for('static', filename='presentaciones/taller_de_pintura.pptx') }}"
+       class="btn-panel">
+        Descargar Presentación
+    </a>
+</div>
+    <div class="card">
+        <h2> Pintura Acrílica</h2>
+        <p>
+            Conoce el uso de pinturas acrílicas,
+            mezclas, sombras y texturas para crear obras artísticas únicas.
+        </p>
+        <a href="{{ url_for('static', filename='presentaciones/Pintura_acrilica.pptx') }}"
+       class="btn-panel">
+        Descargar curso
+    </a>
+    </div>
+    <div class="card">
+        <h2> Pintura con Acuarela</h2>
+        <p>
+            Desarrolla tu creatividad realizando proyectos libres con acuarela
+            guiados por el instructor.
+        </p>
+        <a href="{{ url_for('static', filename='presentaciones/cursos_acuarela.pdf') }}"
+       class="btn-panel">
+        Descargar Curso
+    </a>
+    </div>
+
+    <div class="card">
+        <h2>Paisajes con Acuarela</h2>
+        <p>
+           Ejemplos de obras de montañas, árboles,
+            flores y escenarios naturales utilizando diferentes técnicas artísticas.
+        </p>
+        <a href="/ejemplos_paisajes" class="btn-panel">
+            Ver ejemplos
+        </a>
+    </div>
+
+    <div class="card">
+    <h2>Exposición de Obras</h2>
+
+    <p>
+        Puedes exhibir tus pinturas realizadas.
+    </p>
+
+    <div style="margin-top:20px;">
+        <a href="/galeria" class="btn-panel">
+            Ver Galería
+        </a>
+
+        <a href="/subir_obra" class="btn-panel">
+            Subir Obra
+        </a>
+    </div>
+</div>
+
+<div style="text-align:center; margin:30px;">
+    <a href="/dashboard" class="btn-panel">
+        ⬅ Volver al Panel
+    </a>
+</div>
+
+{% endblock %}

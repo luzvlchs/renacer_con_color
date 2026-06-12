@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="login-box">
+    <h1> Renacer con Color</h1>
+    <p>
+        Taller de pintura para la recuperación emocional
+        y el desarrollo personal.
+    </p>
+    <form action="/dashboard" method="GET">
+        <input
+            type="text"
+            name="usuario"
+            placeholder="Usuario"
+            required>
+        <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required>
+        <button type="submit">
+            Iniciar Sesión
+        </button>
+    </form>
+    <a href="/" class="volver">
+        ← Volver al inicio
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="hero-panel">
+    <h1>Materiales</h1>
+    <p>Inventario de materiales del taller</p>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Material</th>
+            <th>Cantidad</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for material in materiales %}
+        <tr>
+            <td>{{ material['_id'] }}</td>
+            <td>{{ material['nombre'] }}</td>
+            <td>{{ material['cantidad'] }}</td>
+            <td>{{ material['estado'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

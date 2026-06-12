@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+    <h1>Participantes</h1>
+    <p>Registro de participantes del taller</p>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Curso</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for participante in participantes %}
+        <tr>
+            <td>{{ participante['_id'] }}</td>
+            <td>{{ participante['nombre'] }}</td>
+            <td>{{ participante['edad'] }}</td>
+            <td>{{ participante['curso'] }}</td>
+
+
+            <td>
+                <a href="/editar_participante/{{ participante['_id'] }}"
+                   class="btn-panel">
+                    Editar
+                </a>
+                <a href="/eliminar_participante/{{ participante['_id'] }}"
+                   class="btn-panel"
+                   onclick="return confirm('¿Deseas eliminar este participante?')">
+                    Eliminar
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br><br>
+
+<div style="text-align:center;">
+    <a href="/dashboard" class="btn-panel">
+        ← Volver al Panel
+    </a>
+</div>
+{% endblock %}

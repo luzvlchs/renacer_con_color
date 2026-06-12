@@ -1,0 +1,253 @@
+/* =========================
+   GENERAL
+========================= */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+}
+
+h1,h2,h3{
+    margin:0;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* =========================
+   HERO PANEL
+========================= */
+
+.hero-panel{
+    width:80%;
+    max-width:800px;
+    margin:40px auto;
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(255,105,180,0.25);
+}
+
+.hero-panel h1{
+    color:#ff4fa3;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-panel p{
+    color:#666;
+    font-size:1.1rem;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.contenedor-panel{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(255,105,180,0.20);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#ff4fa3;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-panel{
+    display:inline-block;
+    background:linear-gradient(135deg,#ff4fa3,#ff85c0);
+    color:white;
+    padding:12px 30px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-panel:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-box{
+    width:90%;
+    max-width:450px;
+    margin:80px auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(255,105,180,0.25);
+}
+
+.login-box h1{
+    color:#ff4fa3;
+    margin-bottom:15px;
+}
+
+.login-box p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:2px solid #ffd6e7;
+    border-radius:12px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff4fa3,#ff85c0);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    opacity:.9;
+}
+
+.volver{
+    display:inline-block;
+    margin-top:20px;
+    color:#ff4fa3;
+    font-weight:bold;
+}
+
+/* =========================
+   TABLAS
+========================= */
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(255,105,180,0.20);
+}
+
+thead{
+    background:#ff4fa3;
+    color:white;
+}
+
+th,
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#fff4f8;
+}
+
+tr:hover{
+    background:#ffe3ef;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero-panel{
+        width:90%;
+        padding:25px;
+    }
+
+    .hero-panel h1{
+        font-size:2rem;
+    }
+
+    .contenedor-panel{
+        grid-template-columns:1fr;
+    }
+}
+
+.img-curso{
+    width:100%;
+    max-width:500px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    margin:20px auto;
+}
+/* SUBIR OBRAS */
+
+.formulario-obra{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+.formulario-obra input,
+.formulario-obra textarea{
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    font-size:16px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.archivo-label{
+    font-weight:bold;
+    color:#ff4fa3;
+    font-size:18px;
+}
+
+.formulario-obra input[type="file"]{
+    background:white;
+    padding:12px;
+}
+table .btn-panel{
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 2px;
+}

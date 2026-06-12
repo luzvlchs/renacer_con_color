@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-panel">
+    <h1>Galería de Obras</h1>
+    <p>Exposición de trabajos realizados por los participantes.</p>
+</div>
+
+<div class="contenedor-panel">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/obra1.jpg') }}"
+             width="250">
+        <h3>Atardecer</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/obra2.jpg') }}"
+             width="250">
+        <h3>Paisaje Natural</h3>
+    </div>
+
+</div>
+
+{% endblock %}
